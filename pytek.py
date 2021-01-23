@@ -6,10 +6,10 @@ import re
 
 playlist = Playlist("https://www.youtube.com/playlist?list=PLX5sCtu_TCxa11l-mfbfEehrmKfYvP4Wj")
 
-#prints each video url, which is the same as iterating through playlist.video_urls
+#mencetak setiap url video, yang sama seperti melakukan iterasi playlist.video_urls
 for url in playlist:
     print(url)
-#prints address of each YouTube object in the playlist
+#mencetak alamat setiap objek YouTube di playlist
 for vid in playlist.videos:
     print(vid)
 
