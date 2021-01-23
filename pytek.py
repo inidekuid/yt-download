@@ -4,7 +4,7 @@ import os
 import moviepy.editor as mp
 import re
 
-playlist = Playlist("https://www.youtube.com/watch?v=S-pDTsEhg4M&list=PLDgzGydIYPL18xgRUaW3fOhL6_KKzeP7O")
+playlist = Playlist("https://www.youtube.com/playlist?list=PLX5sCtu_TCxa11l-mfbfEehrmKfYvP4Wj")
 
 #prints each video url, which is the same as iterating through playlist.video_urls
 for url in playlist:
@@ -17,9 +17,9 @@ for url in playlist:
    YouTube(url).streams.filter(only_audio=True).first().download()
 
 for url in playlist:
-    YouTube(url).streams.first().download('C:\\Users\\muslih-sma1jp\\Desktop\\pytube\\lagu')
+    YouTube(url).streams.first().download('C:\\Users\\muslih-sma1jp\\Desktop\\pytube')
 
-folder = "C:\\Users\\muslih-sma1jp\\Desktop\\pytube\\lagu"
+folder = "C:\\Users\\muslih-sma1jp\\Desktop\\pytube"
 
 for file in os.listdir(folder):
   if re.search('mp4', file):
