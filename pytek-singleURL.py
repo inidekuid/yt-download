@@ -30,7 +30,7 @@ def unduhYoutube() :
         notif.config(fg="green", text="Unduhan selesai")
     except Exception as e:
         print(e)
-        #notif.config(fg="red", text="Video could not be downloaded")
+        #notif.config(fg="red", text="vidio gagal unduh")
 
 Button(ROOT,text = 'DOWNLOAD', font = 'arial 15 bold' ,bg = 'pale violet red', padx = 2, command = unduhYoutube).place(x=180 ,y = 150)
 
